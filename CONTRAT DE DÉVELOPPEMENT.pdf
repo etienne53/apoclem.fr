@@ -1,0 +1,77 @@
+📄 CONTRAT DE DÉVELOPPEMENT
+Projet : Création d’un site web pour l’Association APOCLEM
+Nom du candidat : Étienne LE BOZEC
+N° de candidat : 02439613213
+Session : BTS SIO SLAM 2025
+
+🧾 Parties prenantes
+Client : Association APOCLEM
+Représentant : M. Jean-Pierre Mauduit (Président de l’association)
+
+Développeur : Étienne LE BOZEC, étudiant en BTS SIO option SLAM
+
+🎯 Objectifs du contrat
+Le présent contrat formalise les engagements entre l’étudiant développeur et l’association cliente pour la réalisation d’un site web, dont les objectifs sont les suivants :
+
+Mise en place rapide d’un site fonctionnel pour accompagner la campagne d’adhésion.
+
+Valorisation du patrimoine musical de la cathédrale de Laval.
+
+Mise à disposition d’un espace documentaire, d’actualités, et de galeries photos.
+
+Évolutivité pour intégrer ultérieurement une zone sécurisée réservée aux membres.
+
+🛠 Prestations prévues
+Le développeur s’engage à réaliser les prestations suivantes :
+
+Analyse des besoins (sur la base d’un cahier des charges fourni).
+
+Conception de l’architecture du site et du menu.
+
+Développement des différentes pages avec intégration de contenus fournis.
+
+Mise en place d’un CMS (WordPress) pour faciliter l’administration.
+
+Intégration des éléments visuels, fichiers PDF, liens et documents téléchargeables.
+
+Sécurisation de l’accès administrateur.
+
+Livraison d’une documentation technique et d’un guide utilisateur.
+
+Assistance à la mise en ligne sur l’hébergeur LWS, avec redirection vers l’URL historique.
+
+📅 Calendrier de réalisation
+Étape	Délai estimé	Date réelle
+Prise de contact et cadrage	1 semaine	Novembre 2024
+Développement initial	2 semaines	Novembre 2024
+Intégration de contenu	1 semaine	Fin novembre 2024
+Recette et corrections	1 semaine	Début décembre 2024
+Mise en ligne	2 jours	Décembre 2024
+
+🔄 Modalités de suivi
+Un point hebdomadaire par courriel avec le représentant de l’association.
+
+Tests intermédiaires et retours utilisateurs pour ajustements.
+
+Livraison d’un PV de recette signé à la fin du projet.
+
+📦 Livrables attendus
+Site web fonctionnel mis en ligne sur https://www.apoclem.fr
+
+Dépôt GitHub contenant le code source, la base de données, la documentation
+
+Documentation technique (README + fichiers Markdown dans le dépôt)
+
+Guide utilisateur (PDF)
+
+Vidéo de démonstration des fonctionnalités
+✍️ Signature des parties
+Pour l’Association APOCLEM
+Nom : Didier PILLN
+Fonction : Président
+Signature : ___________________
+
+Pour le développeur
+Nom : Étienne Le Bozec
+Fonction : Étudiant BTS SIO SLAM
+Signature : ___________________
