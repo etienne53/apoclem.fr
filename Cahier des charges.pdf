@@ -1,0 +1,12 @@
+Cahier des charges
+ 1. Contexte
+ L'Association APOCLEM souhaite renforcer sa visibilite et faciliter la diffusion d'informations
+ relatives a la vie de l'association et a la valorisation des orgues de la Cathedrale de Laval. Pour
+ cela, elle a decide de mettre en place un site internet accessible a tous.
+ 2. Objectifs
+ Le site web devra repondre aux objectifs suivants :- Presenter l'association et ses activites- Mettre a disposition des documents a telecharger- Afficher les actualites et evenements- Valoriser les orgues et organistes- Offrir un acces futur securise aux membres
+ 3. Public cible
+ Le public vise par le site comprend :- Les membres de l'association- Les passionnes de musique et d'orgues- Le grand public et les touristes- Les partenaires institutionnels
+ 4. Fonctionnalites attendues- Page d'accueil avec presentation- Actualites- Documents telechargeables- Historique des instruments et organistes- Galerie de photos- Acces membre securise (a venir)- Page de contact et mentions legales
+5. Contraintes techniques- Utilisation de WordPress pour faciliter la gestion- Hebergement sur le serveur du site paroissial- Conservation de l'URL historique : https://www.apoclem.fr- Responsive design via Bootstrap
+ 6. Livraison attendue- Un site web operationnel et en ligne- Documentation technique- Guide u
