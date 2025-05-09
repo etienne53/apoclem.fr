@@ -1,0 +1,45 @@
+📄 CONTEXTE DU PROJET
+Nom du candidat : Étienne LE BOZEC
+Numéro de candidat : 02439613213
+Session : BTS SIO SLAM 2025
+Réalisation professionnelle n°1
+
+🏛 Structure d'accueil
+Nom : Association APOCLEM (Association Pour la Promotion des Orgues de la Cathédrale de Laval Et de la Mayenne)
+Adresse : 10, place Hardy de Lévare – 53000 LAVAL
+Type : Association loi 1901
+Secteur d'activité : Culturel, musical, patrimonial
+
+🎯 Contexte de la demande
+L’association APOCLEM, dédiée à la préservation et à la valorisation des orgues de la cathédrale de Laval, souhaitait disposer d’un site web clair, évolutif et moderne pour améliorer sa visibilité, faciliter la diffusion d’informations, et encourager l’adhésion de nouveaux membres. L’ancienne structure du site était obsolète, difficilement administrable, et ne répondait plus aux besoins actuels.
+
+🛠 Objectif du projet
+Concevoir et mettre en ligne un site Internet fonctionnel, intuitif et évolutif répondant aux critères suivants :
+
+Interface claire, responsive et facilement administrable
+
+Accès rapide aux actualités, documents, historiques, archives et albums photos
+
+Intégration future d’une zone sécurisée pour les membres
+
+Mise en ligne rapide pour accompagner les campagnes d’adhésion
+
+📅 Période de réalisation
+Début : Novembre 2024
+Fin : Décembre 2024
+
+👨‍💻 Mode de réalisation
+Projet réalisé individuellement, en autonomie, en lien avec le président de l’association pour valider chaque étape du développement.
+
+🧰 Technologies utilisées
+Langages : HTML, CSS, JavaScript, PHP
+
+Frameworks : Bootstrap
+
+CMS : WordPress (pour la rapidité de mise en œuvre et l’accessibilité)
+
+Base de données : MySQL
+
+Outils : Visual Studio Code, Git/GitHub
+
+Hébergement : LWS, redirection vers l’URL historique https://www.apoclem.fr
