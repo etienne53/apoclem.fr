@@ -1,1 +1,168 @@
+ Dans le cadre de ma formation en TSSR, pour mettre en pratique ce que j’ai appris à l’AFPA de
+ Cherbourg , j’ai décidé de créer mon propre TP sur le Protocole DHCP* (Dynamic Host Configuration
+ Protocol = protocole de configuration dynamique des hôtes).
+ ● « LeDHCPestunprotocoleréseau dont le rôle est d’assurer la configuration automatique des
+ paramètre IP d’une station ou d’une machine, notamment en lui attribuant automatiquement
+ une adresse IP et un masque de sous-réseau. Le DHCP peut aussi configurer l’adresse de la
+ passerelle par défaut, des serveurs de noms DNS et de serveur de noms NBNS (connus sous le
+ nomdeserveurs WINS sous les réseaux de la société Microsoft). (Source Wikipédia) »
+ Pré-requis :
+ ● Création des Machines Virtuelles avec Virtual Box V7.018
+ ● UnserveurDHCPAPCOLEM1sousWindowsServeur 2022 avec un Réseaux différents
+ ● Posteclients sous Windows 10 pro.
+ Procédure:
+ 1) Depuis le Gestionnaire serveur, cliquez sur Gérer puis sur Ajouter des rôles et fonctionnalités.
+ 2) Puis sur la fenêtre suivante, cliquer sur suivant.
+ 3) Sélectionner le type d’installation : Installation basée sur un rôle ou une fonctionnalité.
+ 4) J’ai un serveur pool, donc je clique sur Suivant.
+ 5) Jesuis maintenant sur la fenêtre de sélection des rôles. Je vais donc installer le rôle DHCP. Pour
+ cela , je vais cocher la case Serveur DHCP puis , cliquer sur Suivant.
+ 6) Les fonctionnalités requises sont automatiquement sélectionnées pour moi. Donc je n’ai plus
+ qu’à les ajouter.
+ 7) Sur la fenêtre suivante je peux sélectionner d'autres fonctionnalités supplémentaires. Mais
+ généralement, toutes les caractéristiques nécessaires pour le rôle sont déjà sélectionnées. Il ne
+ mereste plus qu’à cliquer sur Suivant.
+ 8) Lafenêtre suivante donne des informations sur le protocole DHCP. Cliquer sur Suivant après en
+ avoir pris connaissance.
+ 9) Maintenant, je confirme l’ajout du rôle DHCP sur le serveur. Je clique sur Installer.
+ 10) Le serveur est en cours d’installation, après quelques minutes l’installation sera terminée.
+ DOSSIER PROFESSIONNEL-Version Traitement de texte– Version du 11/09/2017 
+Page
+ 5
+DOSSIERPROFESSIONNEL (DP)
+ L’installationdurôleDHCPnenécessitepasleredémarrageduserveur.UnefoisleserveurDHCP
+ installé,ilfautcliquersurFermer.
+ 11)Depuislegestionnairedeserveur,unealerteapparaît.IlfautfaireuneConfiguration
+ post-déploiement,puiscliquersurTerminerlaconfigurationDHCP.
+ 12)Surlafenêtrej’autoriseDHCPdansmongroupedetravail.JecliquesurValider.
+ 13)UnefoislaConfigurationpost-installationDHCPterminée,cliquersurFermer.
+ 14)Maintenant,jevaisconfigurermesétenduesDHCPvialegestionnairedeserveur.
+ 15)J’effectueuncliquedroitsurIPV4,puissélectionnezNouvelleétenduepourleréseau
+ 192.168.10.0/24.
+ 16)LafenêtreAssistantNouvelleétendueapparaît,jecliquesurSuivant.
+ 17)Jedonneunnomàmanouvelleétendue :« Apoclem5 »,puisSuivant.
+ 18) Jedéfinismaplaged’adresseIPpuismonMasquedesous-réseauetensuitejecliquesur
+ Suivant
+ 19)SurlafenêtresuivantejecliquedirectementsurSuivant,carjenemetspasd’exclusionetde
+ retard.
+ 20)IcijelaisselaDuréedubailcommeilestdonné,puisSuivant.
+ 21)Jerajoutemapasserellepardéfautdemonrouteurquiseraajoutésurlesclientsdel’étendue.
+ 22)Idementpourlafenêtresuivantecarjen’aipasdeserveurWINS.
+ 23)Maintenantj’activemonétendueetcliquesursuivant.
+ 24)PuissurTerminerpourlafindecréationdelanouvelleétendue.
+ VoirannexeActivité-Type2Exemple1Page :
+ 1:Schémaduréseau.2:Captured’écrandelacréationduDHCP.3:Captured’écrandescréationsdesétendues.
+ 2.Précisezlesmoyensutilisés :
+ Matériels:pcportableASUSF5RL,ASUSVIVOBOOK
+ 3.Avecquiavez-voustravaillé ?
+ EnbinômeavecETIENNELEBOZEC
+ 4.Contexte
+ Nomdel’entreprise,organismeouassociation► APOCLEM
+ Chantier,atelier,service►
+ Périoded’exercice ► Du : Avril2024 au : Juin2024
+ Pour me préparer à ma formation, nous avons effectué une sécurisation de l’accès au site web de
+ l’association avec le moyen d’un code logging user permettant d’effectuer des déposes de différents
+ documents partition, vidéo…
+ Nous avons utilisé différents code principalement Python, HTML et CSS.
+ Voici un exemple d’intégration en HTML :
+ <html lang="fr">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Page de Connexion</title>
+ <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+ <div class="login-container">
+ <form class="login-form" action="/login" method="post">
+ <h2>Connexion</h2>
+ <div class="form-group">
+ <label for="username">Nom d'utilisateur</label>
+ <input type="text" id="username" name="username" required>
+ </div>
+ <div class="form-group">
+ <label for="password">Mot de passe</label>
+ <input type="password" id="password" name="password" required>
+ </div>
+ <button type="submit">Se connecter</button>
+ <button type="submit">Se déconnecter</button>
+ </form>
+ </div>
+ </body>
+ </html>
+ Page 10
+ DOSSIER PROFESSIONNEL-Version du 11/09/2017 
+DOSSIER PROFESSIONNEL (DP)
+ Pour permettre de se connecter nous avons créé un fichier loggin-from.PHP. Ce qui permet de sécuriser
+ les échanges de différents fichiers.
+ <?php
+ if ( ! is_user_logged_in() ) : ?>
+ <form name="loginform" id="loginform" action="<?php echo wp_login_url(); ?>" method="post">
+ <p>
+ <label for="user_login"><?php _e('Username') ?><br />
+ <input type="text" name="log" id="user_login" class="input" value="" size="20" /></label>
+ </p>
+ <p>
+ <label for="user_pass"><?php _e('Password') ?><br />
+ <input type="password" name="pwd" id="user_pass" class="input" value="" size="20"
+ /></label>
+ </p>
+ <p class="forgetmenot">
+ <label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme"
+ value="forever" /> <?php esc_attr_e('Remember Me'); ?></label>
+ </p>
+ <p class="submit">
+ <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary
+ button-large" value="<?php esc_attr_e('Log In'); ?>" />
+ <input type="hidden" name="redirect_to" value="<?php echo esc_url( home_url() ); ?>" />
+ </p>
+ </form>
+ <a href="<?php echo wp_logout_url( home_url() ); ?>" title="<?php _e('Logout') ?>"><?php
+ _e('Logout') ?></a>
+ <?php endif; ?>
+ <?php if ( is_user_logged_in() ) : ?>
+ <a href="<?php echo wp_logout_url( home_url() ); ?>" title="<?php _e('Logout') ?>"><?php
+ _e('Logout') ?></a>
+ <?php endif; ?>
+ 2. Précisez les moyens utilisés :
+ DOSSIER PROFESSIONNEL-Version Traitement de texte– Version du 11/09/2017 
+Page
+ 11
+DOSSIERPROFESSIONNEL (DP)
+ Nousavonseubesoinde
+ ● Word
+ ● Visualstudiocode
+ ● Wordpress
+ 3.Avecquiavez-voustravaillé ?
+ EnbinômeavecETIENNELEBOZEC
+ 4.Contexte
+ Nomdel’entreprise,organismeouassociation► APOCLEM
+ Chantier,atelier,service► Cliquezicipourtaperdutexte.
+ Périoded’exercice ► Du : Avril2024 au : Juin2024
+ Annexe Activité-Type 1 Exemple 1 : 1 : Schéma du réseau
+ SERVEUR DHCP
+ Réseau : 192.168.10.0/24
+ Masque : 255.255.255.0
+ Adresse carte 192.168.10.1
+ Passerelle : 192.168.10.1
+ Plage : 192.168.10.2 à 192.168.10.254
+ Capture d’écran de la création du DHCP Depuis le Gestionnaire de serveur, cliquer sur Gérer puis sur
+ Ajouter des rôles et fonctionnalités :
+ Depuis le Gestionnaire de serveur, cliquer sur Gérer puis sur Ajouter des rôles et fonctionnalités :
+ Page 18
+ DOSSIER PROFESSIONNEL-Version du 11/09/2017 
+DOSSIER PROFESSIONNEL (DP)
+ Installation du rôle DHCP. Pour cela cocher la case Serveur DHCP :
+ Configuration post-déploiement, puis cliquer sur Terminer la configuration DHCP :
+ DOSSIER PROFESSIONNEL-Version Traitement de texte– Version du 11/09/2017 
+19
+ Page
+DOSSIER PROFESSIONNEL (DP)
+ Configuration des étendues DHCP via le gestionnaire de serveur :
+ Sélectionner IPV4 puis Nouvelle étendue pour le réseau 192.168.10.0/24
+ Page 20
+ DOSSIER PROFESSIONNEL-Version du 11/09/2017 
+DOSSIER PROFESSIONNEL (DP)
+ Serveur d’impression
+ DOSSIER PROFESSIONNEL-Version Traitement de texte– Version du 11/09/2017
 
