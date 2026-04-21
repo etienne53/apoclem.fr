@@ -3,123 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio E5 - Etienne LE BOZEC</title>
+<title>Etienne LE BOZEC · Portfolio Premium</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin:0;
-  font-family: Inter, sans-serif;
-  background:#0b0f1a;
-  color:white;
+:root{
+  --bg:#050816;
+  --card:rgba(255,255,255,0.06);
+  --stroke:rgba(255,255,255,0.1);
+  --text:#e5e7eb;
+  --blue:#60a5fa;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter;}
+
+body{
+  background: radial-gradient(circle at 20% 10%, #111827, var(--bg));
+  color:var(--text);
+  overflow-x:hidden;
 }
 
 /* NAV */
-nav {
+nav{
   position:fixed;
   top:0;
   width:100%;
-  background:#111827;
   display:flex;
   justify-content:center;
   gap:25px;
   padding:15px;
+  backdrop-filter: blur(10px);
+  background:rgba(0,0,0,0.3);
+  border-bottom:1px solid var(--stroke);
   z-index:1000;
 }
 
-nav a {
+nav a{
   color:white;
   text-decoration:none;
   font-weight:600;
+  transition:0.3s;
+}
+nav a:hover{color:var(--blue);}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
 
-nav a:hover {
-  color:#60a5fa;
+.hero h1{
+  font-size:60px;
+  background:linear-gradient(90deg,#fff,#60a5fa);
+  -webkit-background-clip:text;
+  color:transparent;
+  animation:fadeIn 1s ease;
+}
+
+.hero p{
+  margin-top:10px;
+  opacity:0.7;
 }
 
 /* SECTIONS */
-section {
+section{
   padding:100px 20px;
   max-width:1000px;
   margin:auto;
 }
 
-/* HERO */
-.hero {
-  text-align:center;
-  padding-top:120px;
+h2{
+  font-size:28px;
+  margin-bottom:20px;
 }
 
-.hero h1 {
-  font-size:40px;
-}
-
-/* CARDS */
-.card {
-  background:#111827;
+/* CARDS PREMIUM */
+.card{
+  background:var(--card);
+  border:1px solid var(--stroke);
   padding:20px;
+  border-radius:16px;
   margin:15px 0;
-  border-radius:12px;
+  backdrop-filter: blur(12px);
+  transition:0.3s;
 }
 
-/* CONTACT */
-input, textarea {
-  width:100%;
-  padding:10px;
-  margin:8px 0;
-  border-radius:8px;
-  border:none;
+.card:hover{
+  transform:translateY(-5px);
+  border-color:var(--blue);
 }
 
-button {
-  background:#2563eb;
-  color:white;
+/* GRID PROJETS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
   padding:10px 15px;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
+  background:var(--blue);
+  color:white;
+  border-radius:10px;
+  text-decoration:none;
+  margin-top:10px;
+  transition:0.3s;
 }
-button:hover {
-  background:#1d4ed8;
+.btn:hover{opacity:0.8;}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* SCROLL */
+html{
+  scroll-behavior:smooth;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <nav>
   <a href="#accueil">Accueil</a>
   <a href="#projets">Projets</a>
   <a href="#certifs">Certifications</a>
-  <a href="#diplomes">Diplômes</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<!-- ACCUEIL -->
+<!-- HERO -->
 <section id="accueil" class="hero">
   <h1>Etienne LE BOZEC</h1>
-  <p>Portfolio BTS SIO SLAM - E5 / E6</p>
+  <p>Portfolio Ultra Premium · BTS SIO SLAM</p>
 </section>
 
 <!-- PROJETS -->
 <section id="projets">
-  <h2>💻 Projets E5</h2>
+  <h2>💻 Projets</h2>
 
-  <div class="card">
-    <h3>GMAO - Gestion Maintenance</h3>
-    <p>Application C# avec gestion des interventions et ordres de travail.</p>
-  </div>
+  <div class="grid">
 
-  <div class="card">
-    <h3>APOCLEM - Site web association</h3>
-    <p>Site Symfony avec gestion de contenu et dons.</p>
-  </div>
+    <div class="card">
+      <h3>GMAO</h3>
+      <p>Gestion maintenance industrielle en C#.</p>
+      <a class="btn">Voir</a>
+    </div>
 
-  <div class="card">
-    <h3>Explorateur de fichiers Django</h3>
-    <p>Interface type Windows avec upload et gestion fichiers.</p>
+    <div class="card">
+      <h3>APOCLEM</h3>
+      <p>Site Symfony pour association.</p>
+      <a class="btn">Voir</a>
+    </div>
+
+    <div class="card">
+      <h3>Django Explorer</h3>
+      <p>Explorateur type Windows web.</p>
+      <a class="btn">Voir</a>
+    </div>
+
   </div>
 </section>
 
@@ -128,19 +179,9 @@ button:hover {
   <h2>🔐 Certifications</h2>
 
   <div class="card">
-    <p>✔ SecNumacadémie (ANSSI)</p>
-    <p>✔ RGPD CNIL</p>
-    <p>✔ Cisco Networking Essentials</p>
-  </div>
-</section>
-
-<!-- DIPLOMES -->
-<section id="diplomes">
-  <h2>🎓 Diplômes</h2>
-
-  <div class="card">
-    <p>BTS SIO SLAM - Systèmes et réseaux</p>
-    <p>Bac Scientifique</p>
+    ✔ SecNumacadémie ANSSI<br>
+    ✔ CNIL RGPD<br>
+    ✔ Cisco Networking Essentials
   </div>
 </section>
 
@@ -149,12 +190,8 @@ button:hover {
   <h2>📩 Contact</h2>
 
   <div class="card">
-    <form>
-      <input type="text" placeholder="Nom">
-      <input type="email" placeholder="Email">
-      <textarea rows="5" placeholder="Message"></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
+    <p>Email : etienne@example.com</p>
+    <p>Disponible stage / alternance</p>
   </div>
 </section>
 
