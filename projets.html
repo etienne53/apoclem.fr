@@ -3,22 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projets E5</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+<title>Projets E5 · Etienne LE BOZEC</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-body{background:#050816;color:white;font-family:Inter;margin:0;}
-nav{position:fixed;top:0;width:100%;display:flex;justify-content:center;gap:20px;padding:15px;background:rgba(0,0,0,0.4);}
-nav a{color:white;text-decoration:none;font-weight:600;}
+body{
+  margin:0;
+  font-family:Inter;
+  background:#050816;
+  color:white;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:15px;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+
 nav a:hover{color:#60a5fa;}
 
-.container{padding:120px 20px;max-width:900px;margin:auto;}
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:120px 20px;
+}
+
+h1{
+  font-size:40px;
+  background:linear-gradient(90deg,#fff,#60a5fa);
+  -webkit-background-clip:text;
+  color:transparent;
+}
 
 .card{
   background:rgba(255,255,255,0.05);
   padding:20px;
-  margin:15px 0;
+  margin:20px 0;
   border-radius:12px;
+  border:1px solid rgba(255,255,255,0.1);
+  line-height:1.6;
+}
+
+code{
+  background:rgba(255,255,255,0.1);
+  padding:2px 6px;
+  border-radius:6px;
 }
 </style>
 </head>
@@ -33,21 +75,60 @@ nav a:hover{color:#60a5fa;}
 
 <div class="container">
 
-<h1>💻 Projets E5 BTS SIO</h1>
+<h1>💻 Projet E5 · APOCLEM</h1>
 
 <div class="card">
-<h2>GMAO</h2>
-<p>Application de gestion de maintenance industrielle (C#)</p>
-</div>
 
-<div class="card">
-<h2>Django Explorer</h2>
-<p>Explorateur de fichiers web type Windows</p>
-</div>
+<h2>📌 Description</h2>
 
-<div class="card">
-<h2>APOCLEM Symfony</h2>
-<p>Site associatif avec CMS + gestion de contenu</p>
+<p>
+Ce projet consiste en la création d'un site web pour l'Association Pour la Promotion des Orgues de la Cathédrale de Laval et de la Mayenne (APOCLEM).
+L'objectif était de concevoir un site simple, évolutif et rapidement déployable pour soutenir la campagne d'adhésion, tout en étant hébergé sur le site paroissial avec l'URL historique <strong>https://www.apoclem.fr</strong>.
+</p>
+
+<h2>⚙️ Fonctionnalités</h2>
+
+<ul>
+<li>Accueil : Présentation de l’association</li>
+<li>Actualités : Fil d’actualité</li>
+<li>Documents : Téléchargement (bulletins, flyers)</li>
+<li>Historique des instruments : orgues de la cathédrale</li>
+<li>Historique des organistes : biographies + photos</li>
+<li>Album photographique : concerts et événements</li>
+<li>Archives : documents historiques</li>
+<li>Liens : partenaires</li>
+<li>Membres : accès sécurisé (évolutif)</li>
+<li>Contact : informations et mentions légales</li>
+</ul>
+
+<h2>🧠 Technologies utilisées</h2>
+
+<ul>
+<li>HTML / CSS / JavaScript</li>
+<li>Bootstrap (responsive design)</li>
+<li>WordPress (CMS)</li>
+<li>MySQL (base de données membres)</li>
+</ul>
+
+<h2>🖥️ Architecture technique</h2>
+
+<p>
+Le site repose sur un CMS WordPress permettant la gestion dynamique des contenus.
+Le backend PHP interagit avec une base MySQL pour l’espace membres.
+</p>
+
+<h2>📦 Installation locale</h2>
+
+<p><strong>Prérequis :</strong></p>
+<ul>
+<li>XAMPP / WAMP / MAMP</li>
+<li>Navigateur web</li>
+</ul>
+
+<p><strong>Étapes :</strong></p>
+
+<code>git clone https://github.com/etiennelebozec/apoclem-site.git</code>
+
 </div>
 
 </div>
