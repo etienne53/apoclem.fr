@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Etienne LE BOZEC · Portfolio BTS SIO SLAM</title>
+<title>Etienne LE BOZEC · Portfolio Ultra Jury BTS SIO SLAM</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
@@ -25,7 +25,6 @@
 body{
   background: radial-gradient(circle at 20% 10%, #111827, var(--bg));
   color:var(--text);
-  overflow-x:hidden;
 }
 
 /* NAV */
@@ -40,7 +39,6 @@ nav{
   backdrop-filter: blur(12px);
   background:rgba(0,0,0,0.3);
   border-bottom:1px solid rgba(255,255,255,0.1);
-  z-index:1000;
 }
 
 nav a{
@@ -68,12 +66,6 @@ nav a:hover{color:var(--blue);}
   color:transparent;
 }
 
-.hero p{
-  margin-top:10px;
-  opacity:0.7;
-  max-width:600px;
-}
-
 /* SECTIONS */
 section{
   padding:100px 20px;
@@ -81,9 +73,7 @@ section{
   margin:auto;
 }
 
-h2{
-  margin-bottom:20px;
-}
+h2{margin-bottom:20px;}
 
 /* CARDS */
 .card{
@@ -94,106 +84,60 @@ h2{
   margin:15px 0;
 }
 
-/* LISTES */
-ul{
-  margin-left:20px;
-  margin-top:10px;
+/* PDF GRID */
+.pdf-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
 }
 
-code{
-  background:rgba(255,255,255,0.1);
-  padding:2px 6px;
-  border-radius:6px;
+.pdf{
+  padding:15px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
 }
 
-/* SMOOTH */
+.pdf a{
+  color:var(--blue);
+  text-decoration:none;
+  font-weight:600;
+}
+
 html{scroll-behavior:smooth;}
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#accueil">Accueil</a>
   <a href="#projets">Projets</a>
   <a href="#wordpress">APOCLEM</a>
   <a href="#certifs">Certifications</a>
+  <a href="#pdf">PDF</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <!-- HERO -->
 <section id="accueil" class="hero">
   <h1>Etienne LE BOZEC</h1>
-  <p>Portfolio BTS SIO SLAM · Systèmes, réseaux, développement & cybersécurité</p>
+  <p>Portfolio Ultra Jury BTS SIO SLAM</p>
 </section>
 
 <!-- PROJETS -->
 <section id="projets">
-  <h2>💻 Projets professionnels (E5)</h2>
-
+  <h2>💻 Projets E5</h2>
   <div class="card">
-    <h3>GMAO</h3>
-    <p>Application de gestion de maintenance industrielle (C#)</p>
-  </div>
-
-  <div class="card">
-    <h3>Django Explorer</h3>
-    <p>Explorateur de fichiers type Windows (Python / Web)</p>
-  </div>
-
-  <div class="card">
-    <h3>APOCLEM Symfony</h3>
-    <p>Site associatif avec gestion de contenu et dons</p>
+    GMAO · Django Explorer · APOCLEM Symfony
   </div>
 </section>
 
-<!-- WORDPRESS APOCLEM -->
+<!-- APOCLEM -->
 <section id="wordpress">
-  <h2>🧩 Projet APOCLEM – CMS WordPress</h2>
-
+  <h2>🧩 Projet APOCLEM</h2>
   <div class="card">
-
-    <h3>📌 Contexte</h3>
-    <p>
-      Le projet APOCLEM est un site web associatif basé sur le CMS WordPress,
-      destiné à la gestion et la diffusion de contenus culturels liés aux orgues de la cathédrale.
-    </p>
-
-    <h3>⚙️ Technologies utilisées</h3>
-    <ul>
-      <li>WordPress (CMS)</li>
-      <li>PHP (backend)</li>
-      <li>MySQL (base de données)</li>
-      <li>HTML / CSS</li>
-    </ul>
-
-    <h3>🧠 Fonctionnement technique</h3>
-    <p>
-      Le fichier <code>index.php</code> de WordPress correspond au cœur du système d’administration.
-      Il permet de gérer :
-    </p>
-
-    <ul>
-      <li>Le tableau de bord (dashboard)</li>
-      <li>Les widgets de gestion</li>
-      <li>L’administration des plugins</li>
-      <li>L’affichage des statistiques et contenus</li>
-    </ul>
-
-    <h3>🔐 Compétences mobilisées (BTS SIO)</h3>
-    <ul>
-      <li>Administration de CMS</li>
-      <li>Configuration serveur web</li>
-      <li>Gestion base de données MySQL</li>
-      <li>Maintenance applicative</li>
-    </ul>
-
-    <h3>🎯 Rôle réalisé</h3>
-    <p>
-      Installation et configuration du CMS, personnalisation du thème,
-      intégration des contenus et gestion des extensions WordPress.
-    </p>
-
+    CMS WordPress · PHP · MySQL · gestion contenu associatif
   </div>
 </section>
 
@@ -204,7 +148,65 @@ html{scroll-behavior:smooth;}
   <div class="card">
     ✔ SecNumacadémie ANSSI<br>
     ✔ CNIL RGPD<br>
+    ✔ Pix<br>
     ✔ Cisco Networking Essentials
+  </div>
+</section>
+
+<!-- PDF OFFICIELS -->
+<section id="pdf">
+  <h2>📄 Certifications PDF officielles</h2>
+
+  <div class="pdf-grid">
+
+    <div class="pdf">
+      MOOC TSSR<br>
+      <a href="certifications/MOOC_ETIENNE_LE_BOZEC_TSSR.pdf" target="_blank">Télécharger</a>
+    </div>
+
+    <div class="pdf">
+      Certificat global<br>
+      <a href="certifications/Certificat.pdf" target="_blank">Télécharger</a>
+    </div>
+
+    <div class="pdf">
+      Attestation 2<br>
+      <a href="certifications/Attestation_de_suivi_2.pdf" target="_blank">Télécharger</a>
+    </div>
+
+    <div class="pdf">
+      Attestation 3<br>
+      <a href="certifications/Attestation_de_suivi_3.pdf" target="_blank">Télécharger</a>
+    </div>
+
+    <div class="pdf">
+      Attestation 4<br>
+      <a href="certifications/Attestation_de_suivi_4.pdf" target="_blank">Télécharger</a>
+    </div>
+
+    <div class="pdf">
+      Attestation 5<br>
+      <a href="certifications/Attestation_de_suivi_5.pdf" target="_blank">Télécharger</a>
+    </div>
+
+    <div class="pdf">
+      Pix 2024<br>
+      <a href="certifications/certification-pix-20240422.pdf" target="_blank">Télécharger</a>
+    </div>
+
+    <div class="pdf">
+      Cisco Networking Essentials<br>
+      <a href="certifications/Networking_Essentials_certificate.pdf" target="_blank">Télécharger</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>📩 Contact</h2>
+  <div class="card">
+    Email : elebozec53@live.fr
   </div>
 </section>
 
