@@ -3,31 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Etienne LE BOZEC · Portfolio Ultra Jury BTS SIO SLAM</title>
+<title>Etienne LE BOZEC · Portfolio BTS SIO SLAM</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-:root{
-  --bg:#050816;
-  --text:#e5e7eb;
-  --blue:#60a5fa;
-  --card:rgba(255,255,255,0.05);
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Inter;
-}
-
 body{
-  background: radial-gradient(circle at 20% 10%, #111827, var(--bg));
-  color:var(--text);
+  margin:0;
+  font-family:Inter;
+  background:#050816;
+  color:white;
 }
 
-/* NAV */
 nav{
   position:fixed;
   top:0;
@@ -36,9 +23,8 @@ nav{
   justify-content:center;
   gap:25px;
   padding:15px;
-  backdrop-filter: blur(12px);
-  background:rgba(0,0,0,0.3);
-  border-bottom:1px solid rgba(255,255,255,0.1);
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
 }
 
 nav a{
@@ -47,9 +33,8 @@ nav a{
   font-weight:600;
 }
 
-nav a:hover{color:var(--blue);}
+nav a:hover{color:#60a5fa;}
 
-/* HERO */
 .hero{
   height:100vh;
   display:flex;
@@ -59,155 +44,41 @@ nav a:hover{color:var(--blue);}
   text-align:center;
 }
 
-.hero h1{
+h1{
   font-size:60px;
   background:linear-gradient(90deg,#fff,#60a5fa);
   -webkit-background-clip:text;
   color:transparent;
 }
 
-/* SECTIONS */
-section{
-  padding:100px 20px;
-  max-width:1000px;
-  margin:auto;
-}
+p{opacity:0.7; max-width:600px;}
 
-h2{margin-bottom:20px;}
-
-/* CARDS */
-.card{
-  background:var(--card);
-  border:1px solid rgba(255,255,255,0.1);
-  padding:20px;
-  border-radius:16px;
-  margin:15px 0;
-}
-
-/* PDF GRID */
-.pdf-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:15px;
-}
-
-.pdf{
-  padding:15px;
-  border-radius:12px;
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.1);
-}
-
-.pdf a{
-  color:var(--blue);
+.btn{
+  margin-top:20px;
+  padding:10px 20px;
+  background:#60a5fa;
+  color:black;
+  font-weight:bold;
   text-decoration:none;
-  font-weight:600;
+  border-radius:10px;
 }
 
-html{scroll-behavior:smooth;}
 </style>
 </head>
 
 <body>
 
 <nav>
-  <a href="#accueil">Accueil</a>
-  <a href="#projets">Projets</a>
-  <a href="#wordpress">APOCLEM</a>
-  <a href="#certifs">Certifications</a>
-  <a href="#pdf">PDF</a>
-  <a href="#contact">Contact</a>
+  <a href="index.html">Accueil</a>
+  <a href="projets.html">Projets</a>
+  <a href="certification.html">Certifications</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
-<!-- HERO -->
-<section id="accueil" class="hero">
+<section class="hero">
   <h1>Etienne LE BOZEC</h1>
-  <p>Portfolio Ultra Jury BTS SIO SLAM</p>
-</section>
-
-<!-- PROJETS -->
-<section id="projets">
-  <h2>💻 Projets E5</h2>
-  <div class="card">
-    GMAO · Django Explorer · APOCLEM Symfony
-  </div>
-</section>
-
-<!-- APOCLEM -->
-<section id="wordpress">
-  <h2>🧩 Projet APOCLEM</h2>
-  <div class="card">
-    CMS WordPress · PHP · MySQL · gestion contenu associatif
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifs">
-  <h2>🔐 Certifications</h2>
-
-  <div class="card">
-    ✔ SecNumacadémie ANSSI<br>
-    ✔ CNIL RGPD<br>
-    ✔ Pix<br>
-    ✔ Cisco Networking Essentials
-  </div>
-</section>
-
-<!-- PDF OFFICIELS -->
-<section id="pdf">
-  <h2>📄 Certifications PDF officielles</h2>
-
-  <div class="pdf-grid">
-
-    <div class="pdf">
-      MOOC TSSR<br>
-      <a href="certifications/MOOC_ETIENNE_LE_BOZEC_TSSR.pdf" target="_blank">Télécharger</a>
-    </div>
-
-    <div class="pdf">
-      Certificat global<br>
-      <a href="certifications/Certificat.pdf" target="_blank">Télécharger</a>
-    </div>
-
-    <div class="pdf">
-      Attestation 2<br>
-      <a href="certifications/Attestation_de_suivi_2.pdf" target="_blank">Télécharger</a>
-    </div>
-
-    <div class="pdf">
-      Attestation 3<br>
-      <a href="certifications/Attestation_de_suivi_3.pdf" target="_blank">Télécharger</a>
-    </div>
-
-    <div class="pdf">
-      Attestation 4<br>
-      <a href="certifications/Attestation_de_suivi_4.pdf" target="_blank">Télécharger</a>
-    </div>
-
-    <div class="pdf">
-      Attestation 5<br>
-      <a href="certifications/Attestation_de_suivi_5.pdf" target="_blank">Télécharger</a>
-    </div>
-
-    <div class="pdf">
-      Pix 2024<br>
-      <a href="certifications/certification-pix-20240422.pdf" target="_blank">Télécharger</a>
-    </div>
-
-    <div class="pdf">
-      Cisco Networking Essentials<br>
-      <a href="certifications/Networking_Essentials_certificate.pdf" target="_blank">Télécharger</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>📩 Contact</h2>
-  <div class="card">
-    Email : elebozec53@live.fr
-  </div>
+  <p>Portfolio BTS SIO SLAM · Développement · Réseaux · Cybersécurité</p>
+  <a class="btn" href="projets.html">Voir les projets</a>
 </section>
 
 </body>
